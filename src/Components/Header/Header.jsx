@@ -6,7 +6,7 @@ import DailyInfo from "./DailyInfo";
 function Header(){
 
     return(
-       <div>
+       <div className="header">
            <Weather/>
            <Menu/>
            <DailyInfo/>

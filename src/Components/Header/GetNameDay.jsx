@@ -7,14 +7,14 @@ import React, { useEffect, useState } from "react";
 
 function GetNameDay () {
     
-    const [Namedays, setNamedays] = useState({});
-    const [loading, setLoading] = useState(true);
+    const [Namedays, setNamedays] = useState({});                       // névnapok state
+    const [loading, setLoading] = useState(true);                       // szinkronizáláshoz state
 
-    useEffect(() => {
+    useEffect(() => {                   
         const url = "https://api.nevnapok.eu/ma";
         
 
-        const fetchData = async () => {
+        const fetchData = async () => {                                 // GET 
             try {
                 const response = await fetch(url);
                 const json = await response.json();
@@ -22,7 +22,7 @@ function GetNameDay () {
                 setNamedays(json);
             } catch (error) {
                 console.log("error", error);
-            } finally{ setLoading(false);}
+            } finally{ setLoading(false);}                              // engedi a kiíratást lefutást követően
 
             
         };
@@ -30,14 +30,14 @@ function GetNameDay () {
         fetchData();
     }, []);
 
-    if (loading) {
-        return <p>A névnapok töltődnek...</p>;
+    if (loading) {                                                      // amíg betölti a neveket kiírja
+        return <p>Türelem! A névnapok töltődnek...</p>;
       } else{
      return (
          <div>
-             {Namedays[Object.keys(Namedays)[0]].map((nameday, index)=> <div key={index}>{nameday}</div>)}
+             {Namedays[Object.keys(Namedays)[0]].map((nameday, index)=> <div key={index}>{nameday}</div>)}                  
          </div>
-     );
+     );                                                                                                             // kiíratás mappinggal
      }
 }
 
