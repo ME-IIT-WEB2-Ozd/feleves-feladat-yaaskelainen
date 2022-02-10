@@ -1,6 +1,7 @@
 import Weather from "./Weather";
 import Menu from "./Menu";
-import DateTime from "./DateTime";
+
+import DailyInfo from "./DailyInfo";
 
 function Header(){
 
@@ -8,7 +9,7 @@ function Header(){
        <div>
            <Weather/>
            <Menu/>
-           <DateTime/>
+           <DailyInfo/>
        </div> 
     );
 
