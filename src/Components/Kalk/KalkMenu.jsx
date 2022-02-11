@@ -1,12 +1,12 @@
-import KalkButton from "./KalkButton";
 
 
-function KalkMenu(){
+
+function KalkMenu(props){
     
     return(
        <div>
-           <KalkButton name='Ponthatár'/>
-           <KalkButton name='Átlag'/>
+           <button name='Ponthatár' value='Ponthatár'onClick={props.function}>Ponthatár</button> 
+           <button name='Átlag' value='Átlag'onClick={props.function}>Átlag</button> 
        </div> 
     );
 
