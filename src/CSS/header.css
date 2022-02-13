@@ -50,7 +50,47 @@
   line-height: 2rem;
 }
 
+.navbar-nav .btn-primary{
+  background-color:#fbab60;
+  border-color: #fbab60;
+  margin:0.5rem;
+  box-shadow: 2px 2px 6px 1px black;
+  font-family: Roboto;
+  color: black;
+  font-weight: bold;
+}
 
+.navbar-nav .btn-primary:hover{
+  background-color: #6d4a3b ;
+  border-color: #6d4a3b;
+  color: antiquewhite ;
+}
+
+.navbar-collapse{
+  justify-content:center;
+}
+
+.navbar-expand-xl .navbar-nav {
+  flex-direction: column;
+}
+
+.navbar-toggler{
+  background-color: #fbab60;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1110px) {
+  .menu {
+    order: 3;
+  }
+  .col-md-4{
+    margin: 1rem;
+  }
+
+  .container-fluid{
+    justify-content: center;
+  }
+}
 
 
 

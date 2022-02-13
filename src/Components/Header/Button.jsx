@@ -10,7 +10,7 @@ function openNewTab(event){                                                     
 
 function Button(props){                                                                                             
     return(
-       <button value={props.name} url={props.url} onClick={openNewTab}>{props.name}</button>
+       <button class="btn btn-primary btn-lg" value={props.name} url={props.url} onClick={openNewTab}>{props.name}</button>
     );
 }
 
