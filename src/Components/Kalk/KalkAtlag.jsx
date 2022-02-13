@@ -24,13 +24,16 @@ function KalkAtlag(){
 
     return(
         <div>
-            <div>
+            <div className='atlagjegyek'>
                 {jegyek.map((jegy,index)=><Jegy key={index} value={jegy} function={addJegy} sign='+'/>)}
             </div> 
-            <div>
+            <div className='atlagjegyek actual'>
                 {osztalyzatok.map((jegy,index)=><Jegy key={index} index={index} value={jegy} function={removeJegy} sign='-'/>)}
             </div>
-            <div>{vanOszt && <Atlag numbers={osztalyzatok}/>}</div>
+            <div className='eredmeny'>
+                
+                {vanOszt && <Atlag numbers={osztalyzatok}/>}
+            </div>
        </div>
     );
 

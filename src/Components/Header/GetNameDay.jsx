@@ -31,7 +31,7 @@ function GetNameDay () {
     }, []);
 
     if (loading) {                                                      // amíg betölti a neveket 
-        return <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>;
+        return <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>;
       } else{
      return (
          <div className="container">

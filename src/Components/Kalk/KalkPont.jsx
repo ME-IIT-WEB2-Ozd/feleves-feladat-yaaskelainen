@@ -18,8 +18,12 @@ function KalkPont(){
 
     return(
        <div>
-           <input type="number" name="beirtPont" id="beirtPont" onChange={pontBeolvas}/>
-           {vanPont && ponthatar.map((szazalek, index)=><p key={index}>       <span>{(pont*szazalek).toFixed(1)}</span> ponttól érdemjegy: {index+1}     </p>)}
+           <div className="input-group mb-3">
+                <span className="input-group-text" id="inputGroup-sizing-default">Maxpont</span>
+                <input type="number" className="form-control" name="beirtPont" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="beirtPont" onChange={pontBeolvas}/>
+           </div>
+           
+           {vanPont && ponthatar.map((szazalek, index)=><p className="pontok" key={index}>       <span>{(pont*szazalek).toFixed(1)}</span> ponttól érdemjegy: <span className="jegy">{index+1}</span>     </p>)}
        </div> 
     );
 

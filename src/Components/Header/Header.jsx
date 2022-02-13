@@ -1,6 +1,6 @@
 import Weather from "./Weather";
 import Menu from "./Menu";
-import "../../CSS/header.css";
+import "../../CSS/additional.css";
 
 import DailyInfo from "./DailyInfo";
 

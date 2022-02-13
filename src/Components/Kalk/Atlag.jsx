@@ -11,7 +11,10 @@ function Atlag(props){
     let db = props.numbers.length;
     
     return(
-        <div>{show && sum/db}</div>
+        <div>
+            {show && <p>Átlag:</p>}
+            <div >{show && <div className='atlageredmeny'>{(sum/db).toFixed(1)}</div>}</div>
+        </div>
     );
    
 
