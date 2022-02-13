@@ -30,12 +30,14 @@ function GetNameDay () {
         fetchData();
     }, []);
 
-    if (loading) {                                                      // amíg betölti a neveket kiírja
-        return <p>Türelem! A névnapok töltődnek...</p>;
+    if (loading) {                                                      // amíg betölti a neveket 
+        return <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>;
       } else{
      return (
-         <div>
-             {Namedays[Object.keys(Namedays)[0]].map((nameday, index)=> <div key={index}>{nameday}</div>)}                  
+         <div className="container">
+             <div className="row nevnapok">
+             {Namedays[Object.keys(Namedays)[0]].map((nameday, index)=> <div className="col" key={index}>{nameday}</div>)}   
+             </div>               
          </div>
      );                                                                                                             // kiíratás mappinggal
      }

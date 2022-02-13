@@ -19,15 +19,15 @@ function DateTime(){
 
     return (<div>
 
-        <p>{date.toLocaleDateString('hu-HU', {
+        <p className='datum'>{date.toLocaleDateString('hu-HU', {
                  year: 'numeric',
                  month: 'long',
                  day: 'numeric'
               })}</p>
-        <p>{Capitalize(date.toLocaleDateString('hu-HU', {
+        <p className='nap'>{Capitalize(date.toLocaleDateString('hu-HU', {
                  weekday:'long'
               }))}</p>
-        <p> {date.toLocaleString('hu-HU', {
+        <p className='ido'> {date.toLocaleString('hu-HU', {
                 hour: 'numeric',
                 minute: 'numeric',
                 second: 'numeric'
