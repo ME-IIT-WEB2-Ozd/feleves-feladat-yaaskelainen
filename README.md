@@ -1,3 +1,33 @@
+
+A "Kalk" alkalmazás iskolai használatra készült segédprogram. Reszpanzív módon működik, így mobil eszközről is megfelelően funkciónál. 
+
+Megjeleníti az adott és következő napi időjárás előrejelzést.
+
+Könnyen és gyorsan elérhetővé teszi a gyakran használt weboldalakat (youtube, nkp, zanza, gmail stb.) új oldalon.
+
+Megjeleníti az aktuális dátumot és időt másodpercre pontosan.
+
+GET request-el lekéri az aktuális névnapokat, megvárja és kírja őket. Hibás működés esetén hibajelzést ad.
+
+Egyik kalkulátorával a megadott maximális pontszám alapján dinamikusan kiírja a ponthatárokat és az érdemjegyeket.
+
+Másik kalkulátorában dinamikusan ki lehet választani az elért érdemjegyeket, mely külön megjelenítődik, és onnan egyenként tötölni is lehet a jegyeket. A jegyek alapján az elért tanulmányi átlag is dinamikusan kiírásra kerül.
+
+A kalkulátor REACT, node.js, bootstrap technológiákkal lett megvalósítva.
+
+
+
+
+#####################################################################################################################################################################
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
