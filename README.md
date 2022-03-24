@@ -1,3 +1,8 @@
+git clone-t követően:
+
+Telepítés a mappában: npm i / npm install
+
+Indtás: npm start
 
 A "Kalk" alkalmazás iskolai használatra készült segédprogram. Reszpanzív módon működik, így mobil eszközről is megfelelően funkciónál. 
 
