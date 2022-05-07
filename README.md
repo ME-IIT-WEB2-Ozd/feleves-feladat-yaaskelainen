@@ -1,3 +1,5 @@
+Hübner Péter (Neptun: G1GGRE) féléves feladat
+
 git clone-t követően:
 
 Telepítés a mappában: npm i / npm install
